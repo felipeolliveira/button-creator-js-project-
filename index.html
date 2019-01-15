@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Button Creator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="button-creator">
+    <form id="controles">
+      <label for="texto">texto</label>
+      <input type="text" id="texto" name="texto">
+
+      <label for="color">color</label>
+      <input type="color" id="color" name="color">
+
+      <label for="backgroundColor">Background Color</label>
+      <input type="color" id="backgroundColor" name="backgroundColor">
+
+      <label for="height">Height</label>
+      <input type="range" value="0" id="height" name="height" min="0" max="200">
+
+      <label for="width">Width</label>
+      <input type="range" value="0" id="width" name="width" min="0" max="600">
+
+      <label for="border">Border</label>
+      <input type="text" id="border" name="border">
+
+      <label for="borderRadius">Border Radius</label>
+      <input type="range" value="0" id="borderRadius" name="borderRadius" min="0" max="100">
+
+      <label for="fontFamily">Fontes</label>
+      <select name="fontFamily" id="fontFamily">
+        <option value="Arial" selected>Arial</option>
+        <option value="Georgia">Georgia</option>  
+        <option value="monospace">Monospace</option>
+      </select>
+
+      <label for="fontSize">Font Size (rem) </label>
+      <input type="number" id="fontSize" name="fontSize" value="1" step=".5">
+
+    </form>
+    <section class="resultado">
+      <button class="btn">Clique</button>
+      <pre><code class="css"></code></pre>
+    </section>
+  </section>
+
+
+  <script src="script-aula.js"></script>
+</body>
+</html>

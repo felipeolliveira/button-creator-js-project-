@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  font-family: "Montserrat", Calibri, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: .3rem;
+  margin-top: 1.5rem;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  border:none;
+  border-bottom: 1px solid #2c2c2c
+}
+
+.button-creator {
+  display: grid;
+  grid-gap: 30px;
+  padding: 30px;
+  grid-template-columns: 300px 1fr;
+}
+
+#controles {
+  font-size: .875rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,.1)
+}
+
+.css {
+  font-family: Consola, monospace;
+  color: #333;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #666;
+  box-sizing: border-box;
+  padding: 30px 20px 10px 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.css::before {
+  content: 'Resultado';
+  font-size: .875rem;
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  top: -.5rem;
+  left: 10px;
+  background-color: #f2f2f2;
+
+}
+
+.css span {
+  display: block;
+  margin-bottom: .5rem;
+}
