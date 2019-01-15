@@ -69,7 +69,7 @@ function setValues() {
     controles.elements[propertie].value = localStorage[propertie];
   })
   showCSS();
-  alert('Sua última configuração está salva :)')
+  alert('Sua última configuração foi restaurada. Se houver, claro :)')
 }
 
 setValues();
