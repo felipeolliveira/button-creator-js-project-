@@ -69,7 +69,9 @@ function setValues() {
     controles.elements[propertie].value = localStorage[propertie];
   })
   showCSS();
-  alert('Sua última configuração foi restaurada. Se houver, claro :)')
+  if(localStorage["length"] > 0) {
+    alert('Sua última configuração foi restaurada. :)')
+  }
 }
 
 setValues();
